@@ -1,2 +1,5 @@
 SQLAlchemy==2.0.25
 sqlalchemy_utils==0.41.1
+cryptography
+pymysql
+mysql-connector-python

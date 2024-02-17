@@ -1,0 +1,15 @@
+# from controller.user_controller import UserController
+#
+# uc_test=UserController()
+# # #print(uc_test.save("Maryam", "amini","Maminin","zargande123",status=True))
+# # print(uc_test.edit(17, "Amirkhani","Mehranian","ps45!","Ya mahdi", status=True))
+# #print(uc_test.edit(18, "Amirkhan","Mehranian","ps45!","Ya mahdi", status=True))
+# #print(uc_test.find_by_id_internal(170))
+# # # # #print(uc_test.remove(13))
+# # # print(uc_test.find_by_username_and_password("7771","Ya Zahra"))
+# # # #print(uc_test.save("Ali","mohsenian","Mehran1","233", status=True))
+# # # #print(uc_test.save("Ali","mohsenian","Mehran16","233", status=True))
+# # # #print(uc_test.find_by_username_and_password("Mehran1", "233"))
+# # # #print(uc_test.find_by_username_and_password("Mehran1", "2331"))
+# # # #print(uc_test.find_by_username_and_password("Mehran1", "233"))
+# # #print(uc_test.find_all())

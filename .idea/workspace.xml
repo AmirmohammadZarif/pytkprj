@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e6ec09c3-9448-4833-931d-0f5f47a75fc8" name="Changes" comment="Comment UI Save and New Comment was completed and tested successfully -Amirreaza">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;amirmehran&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="05ea2786-b23f-4218-b774-9e50e85e67ff" />
+        <option name="url" value="https://github.com/AhmadMessbah/Python_292120_SocialMedia" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <hideBySeverity>
+      <option value="200" />
+      <option value="300" />
+    </hideBySeverity>
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2bUWJMjig542tiwUllqOpXcHq0y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.base.executor&quot;: &quot;Run&quot;,
+    &quot;Python.chat.executor&quot;: &quot;Run&quot;,
+    &quot;Python.chat_da.executor&quot;: &quot;Run&quot;,
+    &quot;Python.comment.executor&quot;: &quot;Run&quot;,
+    &quot;Python.database_manager.executor&quot;: &quot;Run&quot;,
+    &quot;Python.like.executor&quot;: &quot;Run&quot;,
+    &quot;Python.post.executor&quot;: &quot;Run&quot;,
+    &quot;Python.user.executor&quot;: &quot;Run&quot;,
+    &quot;Python.user_controller.executor&quot;: &quot;Run&quot;,
+    &quot;Python.user_da.executor&quot;: &quot;Run&quot;,
+    &quot;Python.user_test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/debug&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\debug" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ameee\PycharmProjects\Python_292120_SocialMedia\model" />
+      <recent name="F:\Python_292120_SocialMedia\tools" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="user_controller" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SocialMedia" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/controller" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/controller/user_controller.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e6ec09c3-9448-4833-931d-0f5f47a75fc8" name="Changes" comment="" />
+      <created>1706270064343</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706270064343</updated>
+      <workItem from="1706270065471" duration="5000" />
+      <workItem from="1706271365734" duration="8573000" />
+      <workItem from="1706883803000" duration="1816000" />
+      <workItem from="1706885783336" duration="36000" />
+      <workItem from="1706885838547" duration="35000" />
+      <workItem from="1706885943202" duration="2627000" />
+      <workItem from="1707023075468" duration="27728000" />
+      <workItem from="1707066960285" duration="5565000" />
+      <workItem from="1707139004263" duration="11509000" />
+      <workItem from="1707154183858" duration="430000" />
+      <workItem from="1707155135960" duration="13171000" />
+      <workItem from="1707194301208" duration="4213000" />
+      <workItem from="1707208277405" duration="6592000" />
+      <workItem from="1707232348362" duration="3492000" />
+      <workItem from="1707236206593" duration="3206000" />
+      <workItem from="1707242140698" duration="4936000" />
+      <workItem from="1707289029502" duration="4228000" />
+      <workItem from="1707703642424" duration="6651000" />
+      <workItem from="1707779299802" duration="303000" />
+      <workItem from="1707780384044" duration="4889000" />
+      <workItem from="1707785709403" duration="6913000" />
+      <workItem from="1707793253775" duration="10332000" />
+      <workItem from="1707805200745" duration="5502000" />
+      <workItem from="1707859381430" duration="380000" />
+      <workItem from="1707994908776" duration="1112000" />
+    </task>
+    <task id="LOCAL-00017" summary="updated the edit function in database_manager and correponding test Amirreza">
+      <option name="closed" value="true" />
+      <created>1707039510600</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1707039510600</updated>
+    </task>
+    <task id="LOCAL-00018" summary="updated the edit function in database_manager and correponding test Amirreza">
+      <option name="closed" value="true" />
+      <created>1707039533701</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1707039533701</updated>
+    </task>
+    <task id="LOCAL-00019" summary="updated the remove function for social media use case -Amirreza">
+      <option name="closed" value="true" />
+      <created>1707045355172</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1707045355172</updated>
+    </task>
+    <task id="LOCAL-00020" summary="updated the remove function for social media use case -Amirreza">
+      <option name="closed" value="true" />
+      <created>1707045383677</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1707045383677</updated>
+    </task>
+    <task id="LOCAL-00021" summary="updated the remove_by_id function for social media use case -Amirreza">
+      <option name="closed" value="true" />
+      <created>1707045826175</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1707045826176</updated>
+    </task>
+    <task id="LOCAL-00022" summary="incoporated error managment to the remove_by_id function for social media use case -Amirreza">
+      <option name="closed" value="true" />
+      <created>1707045945669</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1707045945669</updated>
+    </task>
+    <task id="LOCAL-00023" summary="completeley tailored and tested the database_manager for social media usecase -Amirreza">
+      <option name="closed" value="true" />
+      <created>1707046803602</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1707046803602</updated>
+    </task>
+    <task id="LOCAL-00024" summary="completeley tailored and tested the database_manager for social media usecase -Amirreza">
+      <option name="closed" value="true" />
+      <created>1707046931831</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1707046931831</updated>
+    </task>
+    <task id="LOCAL-00025" summary="completeley tailored and tested the database_manager for social media usecase -Amirreza">
+      <option name="closed" value="true" />
+      <created>1707048901874</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1707048901878</updated>
+    </task>
+    <task id="LOCAL-00026" summary="completeley tailored and tested the database_manager for social media usecase -Amirreza">
+      <option name="closed" value="true" />
+      <created>1707048933622</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1707048933622</updated>
+    </task>
+    <task id="LOCAL-00027" summary="created the da for all entitites. =Amirreza">
+      <option name="closed" value="true" />
+      <created>1707049203616</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1707049203616</updated>
+    </task>
+    <task id="LOCAL-00028" summary="created the da for all entitites. =Amirreza">
+      <option name="closed" value="true" />
+      <created>1707049244446</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1707049244446</updated>
+    </task>
+    <task id="LOCAL-00029" summary="created the da for all entitites. =Amirreza">
+      <option name="closed" value="true" />
+      <created>1707049326714</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1707049326714</updated>
+    </task>
+    <task id="LOCAL-00030" summary="user controller initiated and concurrently tested save and edit fuctions completed. Amirreza">
+      <option name="closed" value="true" />
+      <created>1707053790328</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1707053790328</updated>
+    </task>
+    <task id="LOCAL-00031" summary="user controller initiated and concurrently tested find by username/id completed. Amirreza">
+      <option name="closed" value="true" />
+      <created>1707070150572</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1707070150572</updated>
+    </task>
+    <task id="LOCAL-00032" summary="user controller initiated and concurrently tested find by username/id completed. Amirreza">
+      <option name="closed" value="true" />
+      <created>1707072629119</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1707072629119</updated>
+    </task>
+    <task id="LOCAL-00033" summary="user_controller.py was completed and tested successfully -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707140249769</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1707140249769</updated>
+    </task>
+    <task id="LOCAL-00034" summary="user_controller.py was completed and tested successfully -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707154098806</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1707154098806</updated>
+    </task>
+    <task id="LOCAL-00035" summary="user_controller.py was completed and tested successfully -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707154245731</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1707154245732</updated>
+    </task>
+    <task id="LOCAL-00036" summary="user_controller.py was completed and tested successfully -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707156389205</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1707156389205</updated>
+    </task>
+    <task id="LOCAL-00037" summary="post controller was completed and tested succesfully.  -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707163152327</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1707163152327</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Like controller was inititatred completed and tested succesfully.  -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707166069738</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1707166069739</updated>
+    </task>
+    <task id="LOCAL-00039" summary="modified classes definition to address some bug in testing.  -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707229293274</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1707229293274</updated>
+    </task>
+    <task id="LOCAL-00040" summary="modified classes definition to address some bug in testing.  -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707230210039</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1707230210039</updated>
+    </task>
+    <task id="LOCAL-00041" summary="modified classes definition to address some bug in testing.  -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707235890957</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1707235890957</updated>
+    </task>
+    <task id="LOCAL-00042" summary="modified classes definition to address some bug in testing.  -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707242184369</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1707242184369</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Save function in post controller and tessted accordingly.-Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707291050298</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1707291050298</updated>
+    </task>
+    <task id="LOCAL-00044" summary="all functions in Post controller was tunned and tessted accordingly.-Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707292580866</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1707292580866</updated>
+    </task>
+    <task id="LOCAL-00045" summary="a few used cases was tested successfully and ready for Ostad review -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707704368051</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1707704368051</updated>
+    </task>
+    <task id="LOCAL-00046" summary="decorative function feature was added to al lmethods in controller classed and init imporatation methodology was implemented successfully per final session training -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707705104686</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1707705104686</updated>
+    </task>
+    <task id="LOCAL-00047" summary="decorative function feature was added to al lmethods in controller classed and init imporatation methodology was implemented successfully per final session training -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707707416363</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1707707416363</updated>
+    </task>
+    <task id="LOCAL-00048" summary="decorative function feature was added to al lmethods in controller classed and init imporatation methodology was implemented successfully per final session training -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707707695617</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1707707695617</updated>
+    </task>
+    <task id="LOCAL-00049" summary="decorative function feature was added to al lmethods in controller classed and init imporatation methodology was implemented successfully per final session training -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707707716103</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1707707716103</updated>
+    </task>
+    <task id="LOCAL-00050" summary="decorative function feature was added to al lmethods in controller classed and init imporatation methodology was implemented successfully per final session training -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707707738979</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1707707738980</updated>
+    </task>
+    <task id="LOCAL-00051" summary="decorative function feature was added to al lmethods in controller classed and init imporatation methodology was implemented successfully per final session training -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707709253731</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1707709253731</updated>
+    </task>
+    <task id="LOCAL-00052" summary="made the post feed chronologically descending -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707709798478</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1707709798478</updated>
+    </task>
+    <task id="LOCAL-00053" summary="made the post feed chronologically descending -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707779354636</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1707779354636</updated>
+    </task>
+    <task id="LOCAL-00054" summary="created the Plost Feed UI and connect to the backend successfully -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707785078678</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1707785078680</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Post UI now groups chrocogilcally and by post ID successfully -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707788049260</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1707788049277</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Post UI now groups chrocogilcally and by post ID successfully -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707792639032</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1707792639032</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Post UI now groups chrocogilcally and by post ID successfully -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707792689332</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1707792689332</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Comment UI Save and New Comment was completed and tested successfully -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707802214871</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1707802214872</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Comment UI Save and New Comment was completed and tested successfully -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707802303064</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1707802303065</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Comment UI Save and New Comment was completed and tested successfully -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707802474525</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1707802474525</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Comment UI Save and New Comment was completed and tested successfully -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707803110046</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1707803110049</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Comment UI Save and New Comment was completed and tested successfully -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707803473978</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1707803473978</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Comment UI Save and New Comment was completed and tested successfully -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707805696968</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1707805696970</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Comment UI Save and New Comment was completed and tested successfully -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707805707036</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1707805707036</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Comment UI Save and New Comment was completed and tested successfully -Amirreaza">
+      <option name="closed" value="true" />
+      <created>1707810725750</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1707810725750</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="user">
+                    <value>
+                      <list>
+                        <option value="*" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Da n da relations to entity  Updated Amirreza" />
+    <MESSAGE value="classes and da road map Updated Amirreza" />
+    <MESSAGE value="config Updated Amirreza" />
+    <MESSAGE value="test operation started Amirreza" />
+    <MESSAGE value="updated the database_manager 4 efficiency amirreza" />
+    <MESSAGE value="updated the edit function in database_manager and correponding test Amirreza" />
+    <MESSAGE value="updated the remove function for social media use case -Amirreza" />
+    <MESSAGE value="updated the remove_by_id function for social media use case -Amirreza" />
+    <MESSAGE value="incoporated error managment to the remove_by_id function for social media use case -Amirreza" />
+    <MESSAGE value="completeley tailored and tested the database_manager for social media usecase -Amirreza" />
+    <MESSAGE value="created the da for all entitites. =Amirreza" />
+    <MESSAGE value="user controller initiated and concurrently tested save and edit fuctions completed. Amirreza" />
+    <MESSAGE value="user controller initiated and concurrently tested find by username/id completed. Amirreza" />
+    <MESSAGE value="user_controller.py was completed and tested successfully -Amirreaza" />
+    <MESSAGE value="post controller was completed and tested succesfully.  -Amirreaza" />
+    <MESSAGE value="Like controller was inititatred completed and tested succesfully.  -Amirreaza" />
+    <MESSAGE value="modified classes definition to address some bug in testing.  -Amirreaza" />
+    <MESSAGE value="Save function in post controller and tessted accordingly.-Amirreaza" />
+    <MESSAGE value="all functions in Post controller was tunned and tessted accordingly.-Amirreaza" />
+    <MESSAGE value="a few used cases was tested successfully and ready for Ostad review -Amirreaza" />
+    <MESSAGE value="decorative function feature was added to al lmethods in controller classed and init imporatation methodology was implemented successfully per final session training -Amirreaza" />
+    <MESSAGE value="made the post feed chronologically descending -Amirreaza" />
+    <MESSAGE value="created the Plost Feed UI and connect to the backend successfully -Amirreaza" />
+    <MESSAGE value="Post UI now groups chrocogilcally and by post ID successfully -Amirreaza" />
+    <MESSAGE value="Comment UI Save and New Comment was completed and tested successfully -Amirreaza" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comment UI Save and New Comment was completed and tested successfully -Amirreaza" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model/da/user_da.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/org_user_controller_testing.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/controller/comment_controller.py</url>
+          <line>121</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$entity_database_manager_tests.coverage" NAME="entity_database_manager_tests Coverage Results" MODIFIED="1707140432841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$comment_da.coverage" NAME="comment_da Coverage Results" MODIFIED="1707787225559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model/da" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$comment_controller_test.coverage" NAME="comment_controller_test Coverage Results" MODIFIED="1707787729305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$user_controller_additional_testing.coverage" NAME="user_controller_additional_testing Coverage Results" MODIFIED="1707154075238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$CommentView.coverage" NAME="CommentView Coverage Results" MODIFIED="1707784711621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$database_manager.coverage" NAME="database_manager Coverage Results" MODIFIED="1707709693620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model/da" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$post_controller.coverage" NAME="post_controller Coverage Results" MODIFIED="1707704593001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/controller" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$sn_view.coverage" NAME="sn_view Coverage Results" MODIFIED="1707140415781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$user_controller.coverage" NAME="user_controller Coverage Results" MODIFIED="1707704701184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/controller" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$post_da.coverage" NAME="post_da Coverage Results" MODIFIED="1707147709023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model/da" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$entitytests_database_manager.coverage" NAME="entitytests+database_manager Coverage Results" MODIFIED="1707046734890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$login_view.coverage" NAME="login_view Coverage Results" MODIFIED="1707808989693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$App.coverage" NAME="App Coverage Results" MODIFIED="1707996040830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$user_da.coverage" NAME="user_da Coverage Results" MODIFIED="1707792262421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model/da" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$Validator.coverage" NAME="Validator Coverage Results" MODIFIED="1707290869140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$comment_view.coverage" NAME="comment_view Coverage Results" MODIFIED="1707809209200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$like.coverage" NAME="like Coverage Results" MODIFIED="1707140443933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model/entity" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$comment_controller.coverage" NAME="comment_controller Coverage Results" MODIFIED="1707790912851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/controller" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$chat_da.coverage" NAME="chat_da Coverage Results" MODIFIED="1706284023829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model/da" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$comment.coverage" NAME="comment Coverage Results" MODIFIED="1707140440930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model/entity" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$like_da.coverage" NAME="like_da Coverage Results" MODIFIED="1707140468432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model/da" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$org_post_controller_testing.coverage" NAME="org_post_controller_testing Coverage Results" MODIFIED="1707292508725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$chat.coverage" NAME="chat Coverage Results" MODIFIED="1706284039441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model/entity" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$user_test.coverage" NAME="user_test Coverage Results" MODIFIED="1707035790740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$post.coverage" NAME="post Coverage Results" MODIFIED="1707158148257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model/entity" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$base.coverage" NAME="base Coverage Results" MODIFIED="1707140437851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model/entity" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$user_view.coverage" NAME="user_view Coverage Results" MODIFIED="1707808211747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$org_user_controller_testing.coverage" NAME="org_user_controller_testing Coverage Results" MODIFIED="1707235858026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$controllertest.coverage" NAME="controllertest Coverage Results" MODIFIED="1707156680090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$post_controller_test.coverage" NAME="post_controller_test Coverage Results" MODIFIED="1707163106613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$like_controller_test.coverage" NAME="like_controller_test Coverage Results" MODIFIED="1707166021700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$post_view.coverage" NAME="post_view Coverage Results" MODIFIED="1707806292466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$user.coverage" NAME="user Coverage Results" MODIFIED="1707227859481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model/entity" />
+    <SUITE FILE_PATH="coverage/Python_292120_SocialMedia$like_controller.coverage" NAME="like_controller Coverage Results" MODIFIED="1707704822908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/controller" />
+  </component>
+</project>

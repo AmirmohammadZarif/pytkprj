@@ -58,7 +58,7 @@ class CommentView():
         Button(self.win_comment, text="New Comment", width=14, command=self.reset_form).place(x=80, y=250)
 
 
-        self.table.place(x=250, y=18)
+        self.table.place(x=250, y=350)
 
         self.reset_form()
         self.win_comment.mainloop()

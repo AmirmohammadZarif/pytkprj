@@ -5,9 +5,11 @@ import tkinter.messagebox as msg
 from controller.comment_controller import CommentController
 from controller.post_controller import PostController
 from controller.user_controller import UserController
+from controller.like_controller import *
+
 from model.entity import *
 from view.comment_view import CommentView
-
+from view.like_view import LikeView
 
 class PostView():
     def __init__(self):
@@ -41,13 +43,13 @@ class PostView():
         self.table.bind("<<TreeviewSelect>>", self.Select_Post)
 
         Button(self.win, text="Save", width=8, command=self.Save_Click).place(x=20, y=200)
-        Button(self.win, text="Edit", width=8, command=self.Edit_Click).place(x=100, y=200)
+        Button(self.win, text="Edit", width=8, command=self.Edit_Click).place(x=150, y=200)
         Button(self.win, text="Remove", width=8, command=self.Remove_Click).place(x=180, y=200)
-        Button(self.win, text="New Post", width=8, command=self.reset_form).place(x=100, y=150)
-        Button(self.win, text="Comment", width=8, command=self.Comment_Click).place(x=20, y=150)
-        Button(self.win, text="Like", width=8, command=self.Like_Click).place(x=180, y=150)
+        Button(self.win, text="+", width=8, command=self.reset_form).place(x=100, y=150)
+        Button(self.win, text="💬", width=8, command=self.Comment_Click).place(x=20, y=150)
+        Button(self.win, text="❤️", width=8, command=self.Like_Click).place(x=180, y=150)
 
-        self.table.place(x=250, y=20)
+        self.table.place(x=10, y=250)
 
         self.reset_form()
         self.win.mainloop()
@@ -99,4 +101,10 @@ class PostView():
         CommentView()
 
     def Like_Click(self):
-        pass
+        PostController.current_post = PostController.find_by_id(self.id.get())
+        controller = LikeController()
+        message = controller.save(PostController.current_post, UserController.current_user)
+        msg.showinfo("Liked", message)
+
+        self.win.destroy()
+        LikeView()

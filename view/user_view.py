@@ -1,6 +1,7 @@
 from tkinter import *
 from view.comment_view import CommentView
 from view.post_view import PostView
+from view.like_view import LikeView
 
 
 class UserView:
@@ -8,12 +9,17 @@ class UserView:
         self.window = Tk()
         self.window.geometry("300x230")
         self.window.title("User Profile")
-        Label(self.window, text=user.name, font=("Arial", 20)).pack()
+        l1 = Label(self.window, text=user.name, font=("Arial", 20))
+        l1.grid(row = 1, column = 2, sticky = N)
+
 
         if user.status == True:
-            Button(self.window, width=8, text="Post", command=self.open_post_view).place(x=40, y=100)
-            Button(self.window, width=8, text="Like", command=self.open_like_view).place(x=120, y=100)
-            Button(self.window, width=8, text="Comment", command=self.open_comment_view).place(x=200, y=100)
+            b1 = Button(self.window, width=8, text="+", command=self.open_post_view)
+            b2 = Button(self.window, width=8, text="👍", command=self.open_like_view)
+            b3 = Button(self.window, width=8, text="💬", command=self.open_comment_view)
+            b1.grid(row = 2, column = 1, sticky = E)
+            b2.grid(row = 2, column = 2, sticky = E)
+            b3.grid(row = 2, column = 3, sticky = E)
         else:
             Label(self.window, text="Suspended Account", font=("Arial", 20)).pack()
 
@@ -28,4 +34,5 @@ class UserView:
         CommentView()
 
     def open_like_view(self):
-        pass
+        self.window.destroy()
+        LikeView()

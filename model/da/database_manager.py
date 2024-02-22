@@ -13,7 +13,6 @@ class DatabaseManager:
         self.session = None
 
     def make_engine(self):
-        print("Hey")
         if not database_exists("mysql+pymysql://root@localhost:3306/mft"):
             create_database("mysql+pymysql://root@localhost:3306/mft")
         if not self.engine:
@@ -25,13 +24,16 @@ class DatabaseManager:
 
     def save(self, entity):
         self.make_engine()
-        self.session.add(entity)
+        # self.session.add(entity)
+        local = self.session.merge(entity)
+        self.session.add(local)
         self.session.commit()
         return entity
 
     def edit(self, entity):
         self.make_engine()
-        self.session.add(entity)
+        local = self.session.merge(entity)
+        self.session.add(local)
         self.session.commit()
         return entity
 

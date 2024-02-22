@@ -15,6 +15,7 @@ class PostController:
         try:
             if (verify_user_for_post(user)) and (text_validator(text)):
                 da = PostDa()
+                print(text)
                 user = da.find_by_id_internal(User, user.id)
                 post = Post(text, user)
                 da.save(post)

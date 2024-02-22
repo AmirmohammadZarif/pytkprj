@@ -7,7 +7,7 @@ from model.da.like_da import *
 
 
 class LikeController:
-
+    current_like=None
     @classmethod
     def save(cls, post, user):
         try:
@@ -16,6 +16,7 @@ class LikeController:
             da.save(like)
             return "Saved"
         except Exception as e:
+            print(e)
             return str(e)
     @classmethod
     def edit(cls, id, post, user):
@@ -81,3 +82,4 @@ class LikeController:
                 raise ValueError("Post Doesn't Exist!!!")
         except Exception as e:
             return str(e)
+        

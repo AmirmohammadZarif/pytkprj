@@ -18,15 +18,13 @@ class DatabaseManager:
         if not self.engine:
             self.engine = create_engine("mysql+pymysql://root@localhost:3306/mft")
             Base.metadata.create_all(self.engine)
-            self.session_factory = sessionmaker(bind=self.engine)
+            self.session_factory = sessionmaker(bind=self.engine, expire_on_commit=False)
         if not self.session:
             self.session = scoped_session(self.session_factory)
 
     def save(self, entity):
         self.make_engine()
-        # self.session.add(entity)
-        local = self.session.merge(entity)
-        self.session.add(local)
+        self.session.add(entity)
         self.session.commit()
         return entity
 

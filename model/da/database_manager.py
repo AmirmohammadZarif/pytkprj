@@ -15,6 +15,7 @@ class DatabaseManager:
     def make_engine(self):
         if not database_exists("mysql+pymysql://root@localhost:3306/mft"):
             create_database("mysql+pymysql://root@localhost:3306/mft")
+    
         if not self.engine:
             self.engine = create_engine("mysql+pymysql://root@localhost:3306/mft")
             Base.metadata.create_all(self.engine)
@@ -30,8 +31,7 @@ class DatabaseManager:
 
     def edit(self, entity):
         self.make_engine()
-        local = self.session.merge(entity)
-        self.session.add(local)
+        self.session.merge(entity)
         self.session.commit()
         return entity
 

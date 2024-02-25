@@ -43,7 +43,7 @@ class PostView():
         self.table.bind("<<TreeviewSelect>>", self.Select_Post)
 
         Button(self.win, text="Save", width=8, command=self.Save_Click).place(x=20, y=200)
-        Button(self.win, text="Edit", width=8, command=self.Edit_Click).place(x=150, y=200)
+        Button(self.win, text="Edit", width=8, command=self.Edit_Click).place(x=100, y=200)
         Button(self.win, text="Remove", width=8, command=self.Remove_Click).place(x=180, y=200)
         Button(self.win, text="+", width=8, command=self.reset_form).place(x=100, y=150)
         Button(self.win, text="💬", width=8, command=self.Comment_Click).place(x=20, y=150)
